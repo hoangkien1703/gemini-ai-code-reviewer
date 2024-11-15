@@ -1,0 +1,12 @@
+name: "Gemini AI Code Reviewer"
+description: "Dùng Google Gemini AI để phân tích Pull Requests cho các vấn đề về logic, bảo mật, cú pháp và coding style."
+inputs:
+  github_token:
+    description: "GitHub token để xác thực"
+    required: true
+  gemini_api_key:
+    description: "API key của Google Gemini"
+    required: true
+runs:
+  using: "node16"
+  main: "index.js"
